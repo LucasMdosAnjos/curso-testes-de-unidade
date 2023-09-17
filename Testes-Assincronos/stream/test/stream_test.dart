@@ -4,9 +4,11 @@ import 'package:test/test.dart';
 void main() {
   test('deve completar a requisição trazendo uma lista de nomes', () {
     final stream = getStreamList();
-    
-    expect(stream,emits('masterclass'));
 
+    // analisa somente o primeiro item da stream
+    //expect(stream,emits('masterclass'));
 
+    // analisa todo o fluxo
+    expect(stream,emitsInOrder(['masterclass','flutterando']));
   });
 }
