@@ -2,7 +2,6 @@ import 'package:api_service/api_service.dart';
 import 'package:api_service/product.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:test/test.dart';
-import 'package:uno/src/presenter/uno_base.dart';
 import 'package:uno/uno.dart';
 
 class UnoMock extends Mock implements Uno {}
